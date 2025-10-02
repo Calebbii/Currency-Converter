@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Currency App</title>
 </head>
 <body>
 
-    <h1>Currency Converter</h1>
-
-    <form id="converterForm">
-        <input type="number" id="amount" placeholder="Amount" required>
-
-        <select id="fromCurrency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="HUF">HUF</option>
-
-        </select>
-
-        <select id="toCurrency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="HUF">HUF</option>
-        </select>
-
-        <button type="submit"> Convert</button>
-    </form>
+    <div class="converter-container">
+        <h1>💱 Currency Converter</h1>
     
-    <h2 id="result"></h2>
+        <form id="converterForm">
+          <input type="number" id="amount" placeholder="Enter amount..." required>
+    
+          <select id="fromCurrency">
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="JPY">JPY - Yen</option>
+            <option value="HUF">HUF - Forint</option>
+          </select>
+    
+          <select id="toCurrency">
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="JPY">JPY - Yen</option>
+            <option value="HUF">HUF - Forint</option>
+          </select>
+    
+          <button type="submit">Convert</button>
+        </form>
+        
+        <h2 id="result"></h2>
+      </div>
 
 
     <script src="./my_app.js"></script>
